@@ -1,0 +1,47 @@
+img {
+    display: block;
+    margin: auto;
+}
+
+
+p i {
+    color: lawngreen;
+  }
+
+  i {
+    color: lightsalmon;
+  }
+
+  h1 {
+    font-size: 64px;
+    text-align: center;
+  }
+
+  h3 {
+    margin-top: 50px;
+    color: hotpink;
+  }
+
+  h2 em {
+    font-size: 50px;
+  }
+
+#googletag {
+    text-align: center;
+    font-size: 30px;
+}
+
+#idInclass {
+    color:blue;
+}
+
+.mother {
+    font-size: 20px;
+    color: red;
+}
+.mother .child {
+    color: pink;
+}
+.mother.child {
+    color: darkmagenta;
+}
