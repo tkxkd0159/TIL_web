@@ -8,9 +8,7 @@ let manList = {
 manList.newVal = {}; // 선언안되있는 key값의 경우 한번에 그 안의 key:value 까지 설정불가. 따라서 선언해줘야 함.
 manList.newVal.name = ["new", "Variation"];
 
-function thisIsMyFunction() {
-  console.log(`"I'm a boy"`);
-};
+function thisIsMyFunction() {};
 class ThisIsMyClass {
   constructor(options) {
     this.name = options.name;
@@ -31,7 +29,7 @@ try {
   console.log(myClass.name);
   myClass.printList();
   console.log(manList);
-  thisIsMyFunction();
+  console.log(`"I'm a boy"`);
 
 } catch (error) {
   console.log("error occured");
