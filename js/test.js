@@ -1,1 +1,2 @@
-console.log((3+27)*12 **(5 % 3))
+console.log(Number(true) == String(1))
+console.log('5'/true)
