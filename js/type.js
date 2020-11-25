@@ -12,12 +12,30 @@ function type() {
   console.log("Function type :", typeof function () {});
   console.log("Convert Number to String :", String(10));
   console.log("Convert String to Number :", Number("2"));
-  console.log("Convert 0, NaN, '' to boolean :", Boolean(0), Boolean(''), Boolean(NaN));
+  console.log(
+    "Convert 0, NaN, '' to boolean :",
+    Boolean(0),
+    Boolean(""),
+    Boolean(NaN)
+  );
   console.log(`null is undefined : ${null == undefined}`);
+  console.log("Array type :", typeof arrayExample);
+  console.log("class type :", typeof MyClass);
+  console.log(objectTest.first.fifth[0].target);
+
 }
 
-class MyClass {};
+class MyClass {}
+let arrayExample = ["First", true, 1];
+let objectTest = {
+  first: {
+    second: ["John", "Jack", "PSJ"],
+    third: { fourth: ["final", "layer"] },
+    fifth: [
+      { target: "first element", valid: true },
+      { target: "first element", valid: false },
+    ],
+  },
+};
 
 type();
-
-console.log("class type :", typeof MyClass);
