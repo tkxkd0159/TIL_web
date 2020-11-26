@@ -13,10 +13,12 @@ function type() {
   console.log("Convert Number to String :", String(10));
   console.log("Convert String to Number :", Number("2"));
   console.log(
-    "Convert 0, NaN, '' to boolean :",
+    "Convert 0, NaN, '', null, undefined to boolean :",
     Boolean(0),
-    Boolean(""),
-    Boolean(NaN)
+    Boolean(NaN),
+    Boolean(''),
+    Boolean(null),
+    Boolean(undefined)
   );
   console.log(`null is undefined : ${null == undefined}`);
   console.log("Array type :", typeof arrayExample);
