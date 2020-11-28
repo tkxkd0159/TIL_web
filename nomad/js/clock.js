@@ -31,25 +31,12 @@ function getDday(
   const resMin = Math.floor(res);
   const resSec = Math.round((res - resMin) * 60);
 
-  if (resDay < 100 && resDay >= 10) {
-    clockTitle.innerText = `0${resDay}d ${
-      resHour < 10 ? `0${resHour}` : resHour
-    }h ${resMin < 10 ? `0${resMin}` : resMin}m ${
-      resSec < 10 ? `0${resSec}` : resSec
-    }s`;
-  } else if (resDay < 10 && resDay >= 0) {
-    clockTitle.innerText = `00${resDay}d ${
-      resHour < 10 ? `0${resHour}` : resHour
-    }h ${resMin < 10 ? `0${resMin}` : resMin}m ${
-      resSec < 10 ? `0${resSec}` : resSec
-    }s`;
-  } else if (resDay >= 100) {
-    clockTitle.innerText = `${resDay}d ${
-      resHour < 10 ? `0${resHour}` : resHour
-    }h ${resMin < 10 ? `0${resMin}` : resMin}m ${
-      resSec < 10 ? `0${resSec}` : resSec
-    }s`;
-  }
+  const dayStr = `${(resDay < 10 && resDay >= 0) ? `00${resDay}` : (resDay < 100 && resDay >= 10) ? `0${resDay}` : resDay}d`;
+  const hourStr = `${resHour < 10 ? `0${resHour}` : resHour}h`;
+  const minStr = `${resMin < 10 ? `0${resMin}` : resMin}m`;
+  const secStr = `${resSec < 10 ? `0${resSec}` : resSec}s`;
+
+  clockTitle.innerHTML = `${dayStr} ${hourStr} ${minStr} ${secStr}`
 }
 
 function main() {
