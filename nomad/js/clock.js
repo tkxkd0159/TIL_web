@@ -19,9 +19,11 @@ function getDday(
   seconds = 0
 ) {
   const currentDay = new Date();
-  let targetDay = new Date(year, month - 1, day, hour, minutes, seconds);
-  const dDay = targetDay - currentDay;
-  const myTimezoneDday = dDay + currentDay.getTimezoneOffset() * 60 * 1000;
+  const targetDay = new Date(year, month - 1, day, hour, minutes, seconds);
+  const myTimezoneDday = targetDay - currentDay;
+  const GMTDday = myTimezoneDday - currentDay.getTimezoneOffset() * 60 * 1000;
+
+
 
   let res = myTimezoneDday / (1000 * 3600 * 24);
   const resDay = Math.floor(res);
