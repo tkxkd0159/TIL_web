@@ -1,3 +1,4 @@
+let blankObject = {};
 let manList = {
   rookie: { name: ["John", "Jack", "PSJ"] },
   _senior: { name: ["LJS", "SNU"] },
