@@ -14,12 +14,12 @@ function idxArrange(array) {
   }
   return array;
 }
-function drawFinish(obj, option="default") {
-  const finishElement = document.createElement("li");
+function drawFinish(obj, option = "default") {
+  const finishElement = document.createElement("p");
   const delBtn = document.createElement("button");
-  delBtn.className = "del-todo-button"
+  delBtn.className = "del-todo-button";
   const returnBtn = document.createElement("button");
-  returnBtn.className = "return-todo-button"
+  returnBtn.className = "return-todo-button";
   const span = document.createElement("span");
   delBtn.innerHTML = "❌";
   returnBtn.innerHTML = "🔼";
@@ -33,7 +33,7 @@ function drawFinish(obj, option="default") {
     });
     finishList = idxArrange(cleanFinish);
     saveFinish();
-    const finishHTMLson = finishListHTML.querySelectorAll("li");
+    const finishHTMLson = finishListHTML.querySelectorAll("p");
     idxArrange(finishHTMLson);
   });
 
@@ -54,13 +54,13 @@ function drawFinish(obj, option="default") {
     }
 
     finishList = idxArrange(cleanFinish);
-    const finishHTMLson = finishListHTML.querySelectorAll("li");
+    const finishHTMLson = finishListHTML.querySelectorAll("p");
     idxArrange(finishHTMLson);
     saveTodo();
     saveFinish();
   });
 
-  if (option === "load"){
+  if (option === "load") {
     finishList.push(obj);
   }
 
@@ -71,13 +71,12 @@ function drawFinish(obj, option="default") {
   finishListHTML.appendChild(finishElement);
 }
 
-
-function drawTodo(input, option="default") {
-  const todoElement = document.createElement("li");
+function drawTodo(input, option = "default") {
+  const todoElement = document.createElement("p");
   const delBtn = document.createElement("button");
-  delBtn.className = "del-todo-button"
+  delBtn.className = "del-todo-button";
   const chkBtn = document.createElement("button");
-  chkBtn.className = "chk-todo-button"
+  chkBtn.className = "chk-todo-button";
   const span = document.createElement("span");
   delBtn.innerHTML = "❌";
   chkBtn.innerHTML = "✅";
@@ -94,7 +93,7 @@ function drawTodo(input, option="default") {
       return todo.id !== parseInt(todoElement.id);
     });
     todoList = idxArrange(cleanTodo);
-    const todoHTMLson = todoListHTML.querySelectorAll("li");
+    const todoHTMLson = todoListHTML.querySelectorAll("p");
     idxArrange(todoHTMLson);
     saveTodo();
   });
@@ -114,13 +113,11 @@ function drawTodo(input, option="default") {
       drawFinish(addFinish[0]);
     }
     todoList = idxArrange(cleanTodo);
-    const todoHTMLson = todoListHTML.querySelectorAll("li");
+    const todoHTMLson = todoListHTML.querySelectorAll("p");
     idxArrange(todoHTMLson);
     saveTodo();
     saveFinish();
   });
-
-
 
   if (option === "submit") {
     const todoIndex = todoList.length + 1;
@@ -131,10 +128,9 @@ function drawTodo(input, option="default") {
       id: todoIndex,
     };
     todoList.push(todoObj);
-
   } else {
     todoElement.id = input.id;
-    if(option ==="load"){
+    if (option === "load") {
       todoList.push(input);
     }
   }

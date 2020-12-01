@@ -1,45 +1,54 @@
-div.todo-input{
-    border-radius: 5px;
-    background-color: #27ae60;
-    padding: 20px;
+body {
+  background-color: #ffeaa7;
+  font-family: Georgia;
+}
+
+div.todo-input {
+  border-radius: 5px;
+  background-color: #27ae60;
+  padding: 20px;
 }
 
 div.todo-input > form > input {
-    width: 100%;
-    height: 50px;
-    font-size: 30px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-ul.todo-list > li > span {
-    font-size: 30px;
-
+div.todo-list > p > span {
+  font-size: 28px;
+  font-family: 'Concert One', cursive, sans-serif;
 }
-ul.finish-list > li > span {
-    font-size: 30px;
-    color: #3c6382;
-
+div.finish-list > p > span {
+  font-size: 28px;
+  font-family: 'Concert One', cursive, sans-serif;
 }
 .del-todo-button {
-    margin-right: 20px;
-    margin-left: 5px;
+  margin-right: 20px;
+  margin-left: 0;
+  font-size: 12px;
 }
-.return-todo-button, .chk-todo-button {
-    margin-right: 0;
-    margin-left: 0;
+.return-todo-button,
+.chk-todo-button {
+  margin-right: 0;
+  margin-left: 0;
+  font-size: 12px;
 }
 
+
 h1.todo-title {
-    font-size: 55px;
+  font-size: 45px;
+  color: #2c3e50;
 }
 
 div#whole-todo-list {
-    position: absolute;
-    top: 20%;
-    left: 20%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
 }
