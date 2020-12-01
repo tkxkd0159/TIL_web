@@ -7,14 +7,19 @@
         <title>To do list</title>
     </head>
     <body>
-        <form class = "js-todo-input todo-input">
-            <input type="text" placeholder="Add your to-do list">
-        </form>
 
-        <h2>Pending</h2>
-        <ul class="js-todo-list"></ul>
-        <h2>Finished</h2>
-        <ul class="js-finish-list"></ul>
+        <div class = "todo-input">
+            <form class = "js-todo-input">
+                <input type="text" placeholder="Add your to-do list">
+            </form>
+        </div>
+
+        <div id="whole-todo-list">
+            <h1 class="todo-title">Pending</h1>
+            <ul class="js-todo-list todo-list"></ul>
+            <h1 class="todo-title">Finished</h1>
+            <ul class="js-finish-list finish-list"></ul>
+        </div>
 
 
         <script src="todo.js"></script>
