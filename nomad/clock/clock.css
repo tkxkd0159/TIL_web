@@ -1,0 +1,31 @@
+body {
+  /* background-image: url("https://images.pexels.com/photos/1656564/pexels-photo-1656564.jpeg?cs=srgb&dl=pexels-brett-sayles-1656564.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh; */
+}
+
+.clock {
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.js-clock-time {
+  color: #34495e;
+  text-align: center;
+  font-size: 160px; /* body default : 16px */
+  margin: 0px;
+}
+
+#clock-title {
+  font-size: 100px;
+  color: #e74c3c;
+  text-align: center;
+}
+
+.form, .greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}

@@ -1,0 +1,21 @@
+body {
+    background-color: #ecf0f1;
+}
+
+span {
+    color: blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+#myLink {
+    color: #e74c3c;
+    transition: color 0.5s ease-in-out;
+}
+
+.test {
+    color: #3ce789;
+    cursor: pointer;
+}

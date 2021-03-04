@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+    </style>
+    <link rel="stylesheet" href="index.css" />
+    <title>To do list</title>
+  </head>
+  <body>
+    <div class="todo-input">
+      <form class="js-todo-input">
+        <input type="text" placeholder="Add your to-do list" />
+      </form>
+    </div>
+
+    <div id="whole-todo-list">
+      <h1 class="todo-title">To Do</h1>
+      <div class="js-todo-list todo-list"></div>
+      <br>
+
+      <h1 class="todo-title">Finished</h1>
+      <div class="js-finish-list finish-list"></div>
+    </div>
+
+    <script src="todo.js"></script>
+  </body>
+</html>

@@ -8,3 +8,15 @@
 <img src="" width=, heigh= >
 <a href="" >
 ```
+
+## CSS
+[CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.asp)
+```
+.a, .b, .c{}   # 쉼표로 연결 시 각각의 항목을 OR로 적용
+.a .b .c{}     # 공백으로 연결해서 사용하면 뒤에 나온 개체를 하위개체로 지정
+.a.b.c{}       # 공백없이 연결해서 사용하면 AND 적용
+```
+
+### JSON.stringify, JSON.parse
+browser에 object 형태의 값을 전달하고 싶다면 JSON.stringify(target_object)로 string 형변환 해줘야 함. 아니면 그냥 object 자체로 인식<br>
+browser에서 string 형변환 되어있는 값을 내 javascript에서 object로 다시 바꾸려면 JSON.parse(target_string)
