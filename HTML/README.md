@@ -11,7 +11,13 @@
 <img src="../img/sample.jpg" width="500" height="300" />
 <a href="" target="_blank"></a>
 ```
-
+### 여닫기 tag
+```html
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+```
 # Tag
 ## style in html
 ```html
